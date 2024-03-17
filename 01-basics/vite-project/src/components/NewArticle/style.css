@@ -1,0 +1,15 @@
+html {
+  --soft-orange: hsl(35, 77%, 62%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+}
+
+.NewArticle-header {
+  color: var(--soft-orange);
+}
+
+.NewArticle-underline {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+  height: 0px;
+  margin: 15px;
+}

@@ -1,0 +1,8 @@
+1. main:
+    1a: navigation-bar => logo, menu
+    1b: main-content => main-article => main-image, big-header, description;
+                        new-article: => title, new-article-1, new-article-2, new-article-3;
+                        top-3-articles => top-article-1, top-article-2, top-article-3;
+
+
+main- dzielimy na 2 divy

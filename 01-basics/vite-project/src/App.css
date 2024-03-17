@@ -1,0 +1,40 @@
+.container {
+    height: 100vh;
+    margin-inline: 20px;
+}
+
+.navbar {
+    height: 70px;
+}
+
+.main_content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "post post aside"
+        "post post aside"
+        "article article article";
+}
+
+.post {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    grid-area: post;
+}
+
+.aside {
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    grid-area: aside;
+}
+
+.article {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    grid-area: article;
+}

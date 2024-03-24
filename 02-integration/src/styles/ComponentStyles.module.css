@@ -1,0 +1,28 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    flex-wrap: wrap;   
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.topPart {
+    height: 60%;
+    width: 100%;
+    background: url(../assets/Image-empty-state.jpeg);
+    background-size: cover;
+}
+
+.bottomPart {
+    padding: 10px;
+    height: 40%;
+    background-color: lightsalmon;
+}

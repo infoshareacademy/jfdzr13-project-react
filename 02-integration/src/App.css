@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,16 @@
+.app {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: 
+        "header"
+        "content";
+}
+
+.header {
+    grid-area: header;
+}
+
+.page_content {
+    grid-area: content;
+}

@@ -1,0 +1,24 @@
+.navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid lightgray;
+
+    font-size: 20px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar a.active {
+    color: navy;
+}

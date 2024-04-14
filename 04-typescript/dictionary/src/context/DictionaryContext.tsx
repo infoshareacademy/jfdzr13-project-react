@@ -1,0 +1,53 @@
+import React, { useContext, useState } from "react";
+
+const BASE_URL = "https://api.dictionaryapi.dev/api/v2/entries/en";
+
+// @ts-expect-error default state is set within DictionaryProvider
+export const DictionaryContext = React.createContext();
+
+export const useDictionary = () => {
+	return useContext(DictionaryContext);
+};
+
+// Otypować definition:
+type DictionaryType = {
+	loadingState: "idle" | "pending" | "resolved" | "rejected";
+	definition:
+		| []
+		| Array<{
+				partOfSpeech: "noun" | "verb" | "adjective" | "adverb" | "pronoun";
+				antonyms: unknown[];
+		  }>;
+};
+
+export const DictionaryProvider = ({ children }: { children: JSX.Element }) => {
+	const [data, setData] = useState<DictionaryType>({
+		definition: [],
+		loadingState: "idle",
+	});
+
+	const getDefinition = async (word: string) => {
+		setData((prev) => ({ ...prev, loadingState: "pending" }));
+		await fetch(`${BASE_URL}/${word}`)
+			.then((res) => res.json())
+			.then((fetchedDefinition) =>
+				setData((prev) => ({
+					...prev,
+					definition: fetchedDefinition[0].meanings,
+					loadingState: "resolved",
+				}))
+			)
+			.catch((error) => {
+				console.error(error);
+				setData((prev) => ({ ...prev, loadingState: "rejected" }));
+			});
+	};
+
+	const passedData = { data, getDefinition };
+
+	return (
+		<DictionaryContext.Provider value={passedData}>
+			{children}
+		</DictionaryContext.Provider>
+	);
+};

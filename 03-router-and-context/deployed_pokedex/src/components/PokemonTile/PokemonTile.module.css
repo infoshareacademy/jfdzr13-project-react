@@ -1,0 +1,47 @@
+.tile {
+    min-width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-areas: 
+        "name"
+        "image"
+        "link";
+}
+
+.tile h1 {
+    margin: 5px;
+    grid-area: name;
+    text-align: center;
+}
+
+.tile .image_container {
+    grid-area: image;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.tile .image_container img {
+    height: 150px;
+    width: 150px;
+}
+
+.tile a {
+    text-align: center;
+    grid-area: link;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(57, 126, 196);
+}
+
+.tile a:hover {
+    text-decoration: underline;
+}
+
+.tile a:active {
+    color: rgb(39, 98, 153)
+}

@@ -1,0 +1,42 @@
+.pokemon {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+        "presentation details";
+}
+
+
+.presentation {
+    grid-area: presentation;
+    justify-self: center;
+}
+
+.presentation h1 {
+    text-align: center;
+}
+
+.presentation img {
+    height: 150px;
+    width: 150px;
+}
+
+.details {
+    grid-area: details;
+    margin-right: 50px;
+}
+
+.details {
+    list-style-type: none;
+}
+
+.details span {
+    font-weight: 500;
+    font-style: normal;
+}
+
+.details li {
+    margin: 10px 0;
+    font-style: italic;
+}

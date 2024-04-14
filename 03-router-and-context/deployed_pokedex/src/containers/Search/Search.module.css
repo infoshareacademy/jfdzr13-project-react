@@ -1,0 +1,55 @@
+.search {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: 
+        "searchbar"
+        "pokemonInfo";
+}
+
+.searchbar {
+    grid-area: searchbar;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.searchbar select {
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: black;
+    padding-inline: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.searchbar button {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.searchbar button:hover {
+    opacity: 0.9;
+}
+
+.searchbar button:active {
+    background-color: rgb(91, 187, 247);
+}
+
+.pokemonInfo {
+    grid-area: pokemonInfo;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}

@@ -9,7 +9,7 @@ export const useDictionary = () => {
   return useContext(DictionaryContext);
 };
 
-type State = "idle" | "pending" | "resolved" | "rejected";
+type LoadingState = "idle" | "pending" | "resolved" | "rejected";
 
 type DefinitionItem = {
   definition: string;

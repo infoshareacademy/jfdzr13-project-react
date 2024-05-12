@@ -76,6 +76,39 @@ lub
    -  komponent powinien wyświetlać linki do publicznych podstron dla niezalogowanego uzytkownika
    -  dla zalogowanych uzytkowników komponent powinien wyświetlać linki do prywatnych podstron oraz przycisk do wylogowywania
 
-9. Stwórz komponent `Login.jsx` zawierający funkcjonalność logowania przy pomocy mejla i hasła oraz przy pomocy google providera
+9. Stwórz komponent Layout.
 
-10.   Stwórz komponent `SignUp.jsx` umozliwiający rejestrację uzytkownika
+   -  komponent ma wyświetlać NavigationMenu na kazdej podstronie
+   -  pod NavigationMenu wyświetlana jest treść strony `<Outlet>`
+   -  pod treścią strony wyświetlany jest footer
+
+10.   Stwórz komponent `Login.jsx` zawierający funkcjonalność logowania przy pomocy mejla i hasła oraz przy pomocy google providera
+
+11.   Stwórz komponent `SignUp.jsx` umozliwiający rejestrację uzytkownika
+
+12.   Stwórz komponent Classes.
+
+-  po zassaniu danych z firestore komponent zwraca nienumerowaną listę klas, np w postaci kafelków,
+-  kazdy kafelek jest linkiem do podstrony klasy
+
+13.   Stwórz komponent Class.
+
+-  kazda klasa przedstawia informacje na temat:
+   -  liczby uczniów w klasie,
+   -  imiona i nazwiska uczniów
+
+14. Stwórz komponent Students
+
+-  po zassadniu danych z firestore komponent zwraca nienumerowaną listę linków,
+-  kazdy link jest kafelkiem przedstawiającym imię i nazwisko a takze klasę, do której uczęszcza uczeń,
+-  kazdy link przenosi na podstronę danego studenta
+
+15. Stwórz komponent Student
+
+-  komponent przedstawia informacje o imieniu, nazwisko i klasie, do której uczęszcza uczeń, a takze,
+-  listę przedmiotów i ocen otrzymanych przez ucznia
+
+16. Stwórz komponent Teachers:
+
+-  komponent przedstawia w postaci np kafelków informacje o imionach i nazwiskach nauczycieli a takze informację jaką klasą opiekuje się kazdy z nich,
+-  nadto kafelki nauczycieli zawierają linki do podstron ich klas

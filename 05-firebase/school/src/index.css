@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}

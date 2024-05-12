@@ -1,0 +1,93 @@
+.spa__container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.login {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 450px;
+    max-height: 70%;
+    width: 500px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr;
+}
+
+.login h2 {
+    text-align: center;
+    font-size: 20px;
+    align-self: center;
+}
+
+.form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input {
+    margin-top: 5px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgb(195, 206, 218);
+    border-radius: 5px;
+}
+
+.spa__container button {
+    padding: 10px;
+}
+
+.form button {
+    border: 1px solid rgb(195, 206, 218);
+    border-radius: 5px;
+    background-color: #a7ccf3;
+}
+
+.form button:hover {
+    background-color: #3698b1;
+}
+
+.form button:active {
+    background-color: #499ac9;
+}
+
+.hints {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hints p {
+    margin-block: 10px 5px;
+}
+
+.hints a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgb(195, 206, 218);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #a7ccf3;
+}
+
+.hints a:hover {
+    background-color: #3698b1;
+}
+
+.hints button {
+    background-color: salmon;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+.hints button:hover {
+    opacity: 0.9;
+}
